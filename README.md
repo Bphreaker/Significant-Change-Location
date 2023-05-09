@@ -1,4 +1,15 @@
-# Significant-Change-Location
+# @mauron85/cordova-plugin-background-geolocation
+
+## We're moving
+
+Npm package is now [@mauron85/cordova-plugin-background-geolocation](https://www.npmjs.com/package/@mauron85/cordova-plugin-background-geolocation)!
+
+
+## Donation
+
+Please support my work and continued development with your donation.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KTUXQQD85F666)
 
 ## Submitting issues
 
