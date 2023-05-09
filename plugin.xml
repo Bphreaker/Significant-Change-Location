@@ -24,8 +24,8 @@
 
     <!-- android -->
     <platform name="android">
-        <preference name="GOOGLE_PLAY_SERVICES_VERSION" default="11.0.4"/>
-        <preference name="ANDROID_SUPPORT_LIBRARY_VERSION" default="26+"/>
+        <preference name="GOOGLE_API_VERSION" default="18.+" />
+        <preference name="ANDROID_SUPPORT_LIBRARY_VERSION" default="28+"/>
         <preference name="ICON" default="@mipmap/ic_launcher" />
         <preference name="SMALL_ICON" default="@mipmap/ic_launcher" />
         <preference name="ACCOUNT_NAME" default="@string/app_name" />
@@ -33,7 +33,7 @@
         <preference name="ACCOUNT_TYPE" default="$PACKAGE_NAME.account" />
         <preference name="CONTENT_AUTHORITY" default="$PACKAGE_NAME" />
 
-        <framework src="com.google.android.gms:play-services-location:$GOOGLE_PLAY_SERVICES_VERSION" />
+        <framework src="com.google.android.gms:play-services-location:$GOOGLE_API_VERSION" />
         <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_LIBRARY_VERSION" />
         <framework src="com.android.support:appcompat-v7:$ANDROID_SUPPORT_LIBRARY_VERSION" />
         <framework src="android/dependencies.gradle" custom="true" type="gradleReference"/>
@@ -143,7 +143,8 @@
                     android:resource="@xml/syncadapter" />
             </service>
             <service
-                android:name="com.marianhello.bgloc.sync.AuthenticatorService">
+                android:name="com.marianhello.bgloc.sync.AuthenticatorService"
+                android:exported="true">
                 <intent-filter>
                     <action android:name="android.accounts.AccountAuthenticator"/>
                 </intent-filter>
